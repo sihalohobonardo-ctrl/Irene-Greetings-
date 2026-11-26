@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selamat Wisuda, Ibu Irene Dwi Yolanda Turnip, S.Kep</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+<div class="bg" aria-hidden="true"></div>
+
+<nav class="nav" aria-label="Navigasi">
+  <button data-go="opening" class="active">Pembuka</button>
+  <button data-go="inside" data-needs-open>Recap</button>
+  <button data-go="letter" data-needs-open>Surat</button>
+</nav>
+
+<div class="petals" id="petals" aria-hidden="true"></div>
+
+<!-- 1. PEMBUKA -->
+<section id="opening" class="screen">
+  <h1 class="title" id="openTitle">surat yang kalo katanya sih spesial</h1>
+  <div class="envelope" id="envelope">
+    <div class="card">
+      <p class="card-small">Selamat</p>
+      <p class="card-big">Wisuda</p>
+      <p class="card-name" id="cardName">Irene Dwi Yolanda Turnip, S.Kep</p>
+      <span class="orn">❦</span>
+    </div>
+    <div class="env-back"></div>
+    <div class="env-front"></div>
+    <div class="flap"></div>
+    <button class="seal" id="seal" aria-label="Buka amplop"><span>♥</span></button>
+  </div>
+  <button class="pill" id="openBtn">Ketuk untuk membuka</button>
+</section>
+
+<!-- 2. KENANGAN -->
+<section id="inside" class="screen reveal" hidden>
+  <div class="orn big">❦</div>
+  <h2 class="title">Fotonya nyomot di sec acc hehe</h2>
+  <div class="gap"></div>
+
+  <div class="gallery" id="gallery"></div>
+
+  <h2 class="title mt">Documentation</h2>
+  <div class="video-box" id="videoBox">
+    <video id="video" controls playsinline preload="metadata" hidden></video>
+    <div class="video-empty" id="videoPick">
+      <span class="plus">▶</span>
+      <span>Video akan tampil di sini</span>
+    </div>
+  </div>
+</section>
+
+<!-- 3. SURAT -->
+<section id="letter" class="screen reveal" hidden>
+  <div class="paper-wrap">
+    <img class="flower" alt="" src="Image/Bunga .png">
+    <article class="paper" id="paper">
+      <h2 class="dear" id="dear"></h2>
+      <div class="body" id="letterBody"></div>
+      <p class="sign" id="sign"></p>
+    </article>
+  </div>
+  <div class="row">
+    <button class="pill" id="loveBtn">KLIKK</button>
+    <button class="pill ghost" id="replayBtn">Tutup amplop</button>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" id="lbClose" aria-label="Tutup">✕</button>
+  <button class="lb-nav prev" id="lbPrev" aria-label="Sebelumnya">‹</button>
+  <img id="lbImg" alt="">
+  <button class="lb-nav next" id="lbNext" aria-label="Berikutnya">›</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
