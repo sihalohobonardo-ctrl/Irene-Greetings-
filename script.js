@@ -6,7 +6,7 @@ const CONFIG = {
   // Foto: isi path file di folder media/, mis. "media/foto1.jpg". Kosongkan "" agar bisa dipilih manual.
   photos: ["Image/1.jpeg", "Image/2.jpeg", "Image/3.jpeg", "Image/4.jpeg", "Image/5.jpeg", "Image/6.jpeg"],
   // Video: mis. "media/video.mp4". Kosongkan "" agar bisa dipilih manual.
-  video: "",
+  video: "Image/Bronado.mp4",
   letter: [
     "Akhirnya, hari yang kamu tunggu-tunggu datang juga. Aku tahu untuk sampai di titik ini bukanlah hal yang mudah. Ada banyak perjuangan, rasa lelah, dan mungkin juga hari-hari ketika kamu merasa ingin menyerah. Tapi hari ini, semua itu terbayar dengan indah.",
     "Aku ikut senang dan bangga melihat kamu berhasil menyelesaikan satu tahap penting dalam hidupmu. Semoga gelar yang kamu raih hari ini menjadi awal dari banyak hal baik yang akan datang. Semoga langkahmu ke depannya semakin dimudahkan, impianmu satu per satu terwujud, dan kamu selalu dikelilingi hal-hal yang membuatmu bahagia.",
